@@ -5,11 +5,14 @@ A video tracking and segmentation system based on SAM3, supporting point-prompt-
 # Overview
 This system leverages SAM3's powerful segmentation generalization capabilities to deliver excellent performance in infrared video segmentation tasks. Since infrared videos lack color information—where SAM3's text-prompt feature underperforms—this implementation specifically utilizes point-prompt annotation to fully harness SAM3's potential.
 借助于sam3强大的分割泛化能力，本系统在红外视频分割中有很好的效果。同时，红外无颜色信息，使用sam3的文本提示效果不佳，故这里特开发基于点提示标注，从而充分发挥sam3的能力。
+
+# Note
+This project contains only a single code file(sam3_video_main.py),for the remaining code, please refer to sam3-gradio/[https://github.com/Pytorchlover/sam3-gradio].
 # Key Features
-Dual-Mode Support: Excellent performance for both visible-light and infrared video segmentation
-Infrared-Optimized: Specialized point-prompt labeling for infrared video, addressing the limitations of text prompts in colorless environments
-Result Export: Supports downloading labeled masks and comparative video results
-User-Friendly Interface: Built with Gradio for accessible interaction
+- Dual-Mode Support: Excellent performance for both visible-light and infrared video segmentation
+- Infrared-Optimized: Specialized point-prompt labeling for infrared video, addressing the limitations of text prompts in colorless environments
+- Result Export: Supports downloading labeled masks and comparative video results
+- User-Friendly Interface: Built with Gradio for accessible interaction
 # Prerequisites
 Refer to Acknowledgments for foundational dependencies and setup requirements.
 Installation
