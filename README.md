@@ -20,6 +20,7 @@ Refer to Acknowledgments for foundational dependencies and setup requirements.
 # Installation
 Clone the repository
 git clone https://github.com/buwangchuxin199/sam3-video-gradio.git
+
 cd sam3-video-gradio
 
 # Usage
