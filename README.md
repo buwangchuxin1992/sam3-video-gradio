@@ -1,10 +1,32 @@
-# sam3-video-gradio
-![proce_pipl](./screenshot-20260311-104843.png)
-Based on the SAM3 video tracking and segmentation system, it can be used for point-prompt-based video segmentation, suitable for both digital image (visible light) annotation and especially applicable to infrared video segmentation. Leveraging SAM3’s powerful segmentation generalization capability, this system achieves excellent results in infrared video segmentation. However, as infrared videos lack color information, SAM3’s text-prompt performance is suboptimal. Hence, this system specifically employs point-prompt annotation to fully exploit SAM3’s capabilities.
+SAM3 Video Tracking & Segmentation with Gradio
+./screenshot-20260311-104843.png
+A video tracking and segmentation system based on SAM3, supporting point-prompt-based video segmentation. Suitable for both digital image (visible light) annotation and particularly effective for infrared video segmentation.
+基于sam3的视频跟踪分割系统，可用于基于点提示的视频分割，既可以用于数码图像（可见光）标注，也特别适用于红外视频分割。
+Overview
+This system leverages SAM3's powerful segmentation generalization capabilities to deliver excellent performance in infrared video segmentation tasks. Since infrared videos lack color information—where SAM3's text-prompt feature underperforms—this implementation specifically utilizes point-prompt annotation to fully harness SAM3's potential.
+借助于sam3强大的分割泛化能力，本系统在红外视频分割中有很好的效果。同时，红外无颜色信息，使用sam3的文本提示效果不佳，故这里特开发基于点提示标注，从而充分发挥sam3的能力。
+Key Features
+Dual-Mode Support: Excellent performance for both visible-light and infrared video segmentation
+Infrared-Optimized: Specialized point-prompt labeling for infrared video, addressing the limitations of text prompts in colorless environments
+Result Export: Supports downloading labeled masks and comparative video results
+User-Friendly Interface: Built with Gradio for accessible interaction
+Prerequisites
+Refer to Acknowledgments for foundational dependencies and setup requirements.
+Installation
+# Clone the repository
+git clone https://github.com/buwangchuxin199/sam3-video-gradio.git
+cd sam3-video-gradio
 
-基于sam3的视频跟踪分割系统，可用于基于点提示的视频分割，既可以用于数码图像（可见光）标注，也特别适用于红外视频分割。借助于sam3强大的分割泛化能力，本系统在红外视频分割中有很好的效果。同时，红外无颜色信息，使用sam3的文本提示效果不佳，故这里特开发基于点提示标注，从而充分发挥sam3的能力。
-
-
+# Install dependencies
+pip install -r requirements.txt
+Usage
+python3 sam3_video_main.py
+Then open your browser and navigate to the provided local URL (typically http://localhost:7860) to access the Gradio interface.
+Upload your video (visible or infrared)
+Add point prompts on objects of interest
+Let SAM3 process the segmentation
+Download the resulting masks or annotated videos
 Acknowledgments
-
-The code are largerly borred from  https://github.com/Pytorchlover/sam3-gradio We are grateful for the helpful resources provided
+This project builds upon the excellent work from sam3-gradio. We are grateful for the foundational implementation and resources provided by the original authors.
+License
+[Specify your license here, e.g., MIT License]
