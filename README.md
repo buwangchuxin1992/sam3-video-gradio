@@ -25,6 +25,6 @@ Add point prompts on objects of interest
 Let SAM3 process the segmentation
 Download the resulting masks or annotated videos
 # Acknowledgments
-This project builds upon the excellent work from sam3-gradio(https://github.com/Pytorchlover/sam3-gradio). We are grateful for the foundational implementation and resources provided by the original authors.
-License
+This project builds largerly upon the excellent work from sam3-gradio(https://github.com/Pytorchlover/sam3-gradio). We are grateful for the foundational implementation and resources provided by the original authors.
+# License
 No
