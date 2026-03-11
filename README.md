@@ -23,12 +23,12 @@ git clone https://github.com/buwangchuxin199/sam3-video-gradio.git
 cd sam3-video-gradio
 
 # Usage
-python3 sam3_video_main.py
-Then open your browser and navigate to the provided local URL (typically http://localhost:7860) to access the Gradio interface.
-Upload your video (visible or infrared)
-Add point prompts on objects of interest
-Let SAM3 process the segmentation
-Download the resulting masks or annotated videos
+run python3 sam3_video_main.py
+- Open your browser and navigate to the provided local URL (typically http://localhost:7860) to access the Gradio interface.
+- Upload your video (visible or infrared)
+- Add point prompts on objects of interest
+- Let SAM3 process the segmentation
+- Download the resulting masks or annotated videos
 # Acknowledgments
 This project builds largerly upon the excellent work from sam3-gradio(https://github.com/Pytorchlover/sam3-gradio). We are grateful for the foundational implementation and resources provided by the original authors.
 # License
