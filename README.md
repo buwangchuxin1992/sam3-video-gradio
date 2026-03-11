@@ -17,8 +17,8 @@ This project contains only a single code file(sam3_video_main.py),for the remain
 - User-Friendly Interface: Built with Gradio for accessible interaction
 # Prerequisites
 Refer to Acknowledgments for foundational dependencies and setup requirements.
-Installation
-# Clone the repository
+# Installation
+Clone the repository
 git clone https://github.com/buwangchuxin199/sam3-video-gradio.git
 cd sam3-video-gradio
 
